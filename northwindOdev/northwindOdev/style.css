@@ -1,0 +1,65 @@
+﻿/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+/* Header ve içerik düzeni */
+.Baslik-Icerigi {
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 150px; /* Resmin boyutunu ayarlayın */
+    height:auto;
+}
+
+.navigation {
+    align-items: center
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 35px;
+    text-decoration: none;
+    color: black;
+    background-color: #ffffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+    .nav-button:hover {
+        background-color: #ced4da;
+    }
+
+/* Northwind bilgileri bölümü */
+.northwind-info {
+    text-align: justify;
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+    .northwind-info h1 {
+        font-size: 30px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .northwind-info p {
+        line-height: 1.6;
+        font-size: 20px;
+    }
+
+    .northwind-info ul {
+        line-height: 1.6;
+        font-size: 20px;
+    }
