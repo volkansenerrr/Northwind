@@ -14,7 +14,7 @@ namespace northwindOdev
         {
             SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS; Initial Catalog=NORTHWND; Integrated Security=True");
             SqlCommand cmd = con.CreateCommand();
-            cmd.CommandText = "SELECT EmployeeID, LastName, FirstName, Title, BirthDate, HireDate, Address, City, Country, HomePhone FROM Employees";
+            cmd.CommandText = "SELECT EmployeeID, FirstName, LastName, Title, BirthDate, HireDate, Address, City, Country, HomePhone FROM Employees";
 
             con.Open();
             SqlDataReader reader = cmd.ExecuteReader();
@@ -24,8 +24,8 @@ namespace northwindOdev
             {
                 Personel p = new Personel();
                 p.EmployeeID = reader.GetInt32(0);
-                p.LastName = reader.GetString(1);
-                p.FirstName = reader.GetString(2);
+                p.FirstName = reader.GetString(1);
+                p.LastName = reader.GetString(2);
                 p.Title = reader.GetString(3);
                 p.BirthDate = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4);
                 p.HireDate = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5);

@@ -75,8 +75,8 @@
             <asp:GridView ID="gv_personeller" runat="server" AutoGenerateColumns="False">
                 <Columns>
                     <asp:BoundField DataField="EmployeeID" HeaderText="Personel ID" />
-                    <asp:BoundField DataField="LastName" HeaderText="Soyisim" />
                     <asp:BoundField DataField="FirstName" HeaderText="İsim" />
+                    <asp:BoundField DataField="LastName" HeaderText="Soyisim" />
                     <asp:BoundField DataField="Title" HeaderText="Ünvan" />
                     <asp:BoundField DataField="BirthDate" HeaderText="Doğum Günü" />
                     <asp:BoundField DataField="HireDate" HeaderText="İşe Alınma Tarihi" />
