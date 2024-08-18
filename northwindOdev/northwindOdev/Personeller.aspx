@@ -78,7 +78,7 @@
                     <asp:BoundField DataField="FirstName" HeaderText="İsim" />
                     <asp:BoundField DataField="LastName" HeaderText="Soyisim" />
                     <asp:BoundField DataField="Title" HeaderText="Ünvan" />
-                    <asp:BoundField DataField="BirthDate" HeaderText="Doğum Günü" />
+                    <asp:BoundField DataField="BirthDate" HeaderText="Doğum Tarihi" />
                     <asp:BoundField DataField="HireDate" HeaderText="İşe Alınma Tarihi" />
                     <asp:BoundField DataField="Address" HeaderText="Adres" />
                     <asp:BoundField DataField="City" HeaderText="Şehir" />
